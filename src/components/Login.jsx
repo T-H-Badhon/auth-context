@@ -1,11 +1,11 @@
-import React, { useContext, useState } from 'react';
+import { useContext} from 'react';
 import { AuthContext } from '../Providers/AuthProvider';
 import { Link, useNavigate } from 'react-router-dom';
 
 
 
 const Login = () => {
-    const {user, logIn,logInGoogle}= useContext(AuthContext)
+    const {logIn,logInGoogle}= useContext(AuthContext)
     const navigate=useNavigate();
 
     const handleSubmit=(event)=>{
@@ -54,7 +54,7 @@ const Login = () => {
                                 </label>
                                 <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                                 <label className="label">
-                                   <Link to='/login'>New on site? Resister!!!</Link>
+                                   <Link to='/resister'>New on site? Resister!!!</Link>
                                 </label>
                             </div>
                             <div className="form-control mt-6">

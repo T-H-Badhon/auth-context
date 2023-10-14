@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProvider';
 
 const Resister = () => {
-    const { user, createNew } = useContext(AuthContext);
+    const {  createNew } = useContext(AuthContext);
     const navigate=useNavigate();
 
     const handleSubmit=(event)=>{
